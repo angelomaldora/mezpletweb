@@ -30,60 +30,80 @@
                 </div>
                 <div class="popup-menu" id="popup-menu">
                     <ul class="popup-menu-links">
-                        <li><a href="">Home</a></li>
-                        <li><a href="#secondSection">More</a></li>
-                        <li><a href="#about">About</a></li>
-                  
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main>
+        <section class="firstSection">
 
-        
-        <section class="secondSection" id="secondSection">
-              <span id="element"></span>
-
-            <h4>List of Apps</h4>
+            <div class="rounded-description">
+                <span id="element"></span>
+                <div class="description">
+NGL Spammer is a tool or service used to send anonymous messages on the NGL (Not Gonna Lie) app, often in large quantities. This app allows users to receive anonymous feedback or comments.
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="download"
+                    onclick="downloadFile()">
+                    Download
+                </button>
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="textGray">Features of Ngl Spammer</span>
+            <h1>Main Features</h1>
             <div class="box">
-                <div class="vertical" id="clickableDiv">
-                                      <img class="image-top" src="sms.png" alt="Java">
+                <div class="vertical">
 
                     <div class="vertical-title">
-                        Sms Bomber
+                        Random Message
                     </div>
-                    <h6>Premium</h6>
                     <div class="vertical-desc">
-                        "SMS Bomber," allows users to send a high volume of text messages to a specified phone number in a short period. This can overwhelm the recipient's device and disrupt their communication.
+                        It has built in random message if you don't have message.
                     </div>
-                    <h2 class="content">View</h2>
                 </div>
-                <div class="vertical" id="nglspam">
-                                      <img class="image-top" src="ngl.png" alt="Java">
-                    <div class="vertical-title">
-                        Ngl Spammer
-                    </div>
-                    <h6>Free</h6>
-                    <div class="vertical-desc">
-                        NGL Spammer is a tool or service used to send anonymous messages on the NGL (Not Gonna Lie) app, often in large quantities. This app allows users to receive anonymous feedback or comments.
-                    </div>
-                                        <h2 class="content">View</h2>
-                </div>
+                <div class="vertical">
 
+                    <div class="vertical-title">
+                        Custom Message
+                    </div>
+                    <div class="vertical-desc">
+                        It has custom message that you customize your spam message.
+                    </div>
+                </div>
+           
+                </div>
                 
             </div>
         </section>
 
     </main>
+            <section class="secondSection">
+                  <hr class="bottom-line">
+            <span class="textGray">Screenshots</span>
+            <div class="box">
+<img src="ngl1.png" alt="Description of the image" class="styled-image">
+<img src="ngl2.png" alt="Description of the image" class="styled-image">
+<img src="ngl3.png" alt="Description of the image" class="styled-image">
+<img src="ngl4.png" alt="Description of the image" class="styled-image">
+            </div>
+        </section>
     <hr class="bottom-line">
-            <section id="about">
+    <section id="contact">
+      
+      
+
     <footer class="footer">
         <div class="firstFooter">
             <div class="inside-section">
                 <div class="first-row">
                     <h1 class="first-title">Mezplet Website</h1>
-
+                    <a href="javascript:downloadFile()" class="download-text">Download</a>
                     <a href="mailto: mrsenpaivi@gmail.com" class="content">Contact Us</a>
                
                 </div>
@@ -93,36 +113,20 @@
             <p class="copyright">© Mezplet Website - Mr Senpai</p>
         </div>
     </footer>
-    </section>
+        </section>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['MEZPLET WEBSITE'],
+            strings: ['Ngl Spammer'],
             typeSpeed: 50,
         });
-// script.js
-document.addEventListener('DOMContentLoaded', function() {
-    var clickableDiv = document.getElementById('clickableDiv');
 
-    clickableDiv.addEventListener('click', function() {
-        // Open new HTML file
-        window.location.href = 'smsbomber.html';
-    });
-});
-document.addEventListener('DOMContentLoaded', function() {
-    var nglspam = document.getElementById('nglspam');
-
-    nglspam.addEventListener('click', function() {
-        // Open new HTML file
-        window.location.href = 'nglspam.html';
-    });
-});
         function toggleMenu() {
             var popupMenu = document.getElementById('popup-menu');
             popupMenu.classList.toggle('show');
         }
         function downloadFile() {
-            const url = 'https://www.mediafire.com/file/cyqlvd0itlcouau/SmsBomber.apk/file';
+            const url = 'https://www.mediafire.com/file/uzqzqy0pjt0d467/Ngl_Spammer.apk/file';
             window.location.href = url;
         }
     </script>
